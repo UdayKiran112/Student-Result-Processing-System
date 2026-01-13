@@ -17,6 +17,8 @@ typedef struct
     float totalScores[SUBS_COUNT];
 } Student;
 
-
+int checkID(char id[], Student students[], int count);
+int checkName(char name[]);
+int checkMarks(float minorMarks[], float majorMarks[]);
 
 #endif

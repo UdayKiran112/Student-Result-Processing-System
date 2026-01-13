@@ -18,6 +18,26 @@ void parse_input(int count, FILE *input, FILE *output)
 
         line[strcspn(line, "\n")] = 0; // Remove newline character
 
+        int idCheck = checkID(line, students, n);
+
+        if(idCheck == -1)
+        {
+            // Prompt user for correct ID
+            fprintf(stderr, "Please enter a valid alphanumeric ID: ");
+            fgets(line, sizeof(line), stdin);
+            line[strcspn(line, "\n")] = 0; // Remove newline character
+            checkID(line, students, n);
+
+        }
+        else if(idCheck == 1)
+        {
+            // Prompt user for unique ID
+            fprintf(stderr, "Please enter a unique ID: ");
+            fgets(line, sizeof(line), stdin);
+            line[strcspn(line, "\n")] = 0; // Remove newline character
+            checkID(line, students, n);
+        }
+
         strcpy(students[n].id, line);
 
         fgets(line, sizeof(line), input);
