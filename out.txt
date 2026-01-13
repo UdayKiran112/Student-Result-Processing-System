@@ -1,0 +1,32 @@
+ID: 25MCMI15
+Name: Gedela Uday Kiran
+Subject 1 - Minor: 30.00, Major: 45.00, Total: 75.00
+Subject 2 - Minor: 32.00, Major: 50.00, Total: 82.00
+Subject 3 - Minor: 35.00, Major: 55.00, Total: 90.00
+Subject 4 - Minor: 28.00, Major: 48.00, Total: 76.00
+Subject 5 - Minor: 36.00, Major: 52.00, Total: 88.00
+
+ID: 25MCMT12
+Name: Ram
+Subject 1 - Minor: 15.00, Major: 20.00, Total: 35.00
+Subject 2 - Minor: 18.00, Major: 25.00, Total: 43.00
+Subject 3 - Minor: 21.00, Major: 30.00, Total: 51.00
+Subject 4 - Minor: 24.00, Major: 35.00, Total: 59.00
+Subject 5 - Minor: 27.00, Major: 40.00, Total: 67.00
+
+ID: 25MCMT37
+Name: Anand Kumar
+Subject 1 - Minor: 35.00, Major: 42.00, Total: 77.00
+Subject 2 - Minor: 28.00, Major: 35.00, Total: 63.00
+Subject 3 - Minor: 25.00, Major: 32.00, Total: 57.00
+Subject 4 - Minor: 22.00, Major: 29.00, Total: 51.00
+Subject 5 - Minor: 19.00, Major: 26.00, Total: 45.00
+
+ID: 25MCMI24
+Name: Ravi Kiran
+Subject 1 - Minor: 23.00, Major: 30.00, Total: 53.00
+Subject 2 - Minor: 20.00, Major: 27.00, Total: 47.00
+Subject 3 - Minor: 17.00, Major: 24.00, Total: 41.00
+Subject 4 - Minor: 14.00, Major: 21.00, Total: 35.00
+Subject 5 - Minor: 11.00, Major: 18.00, Total: 29.00
+

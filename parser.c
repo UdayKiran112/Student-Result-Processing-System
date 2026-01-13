@@ -1,0 +1,52 @@
+#include "parser.h"
+
+// read data from input file and write to output file
+void parse_input(int count, FILE *input, FILE *output)
+{
+    Student students[count];
+
+    int n = 0;
+
+    char line[256];
+
+    while (n < count && fgets(line, sizeof(line), input) != NULL)
+    {
+        if (strlen(line) <= 1)
+        {
+            continue; // skip empty lines
+        }
+
+        line[strcspn(line, "\n")] = 0; // Remove newline character
+
+        strcpy(students[n].id, line);
+
+        fgets(line, sizeof(line), input);
+        line[strcspn(line, "\n")] = 0; // Remove newline character
+
+        strcpy(students[n].name, line);
+
+        for (int i = 0; i < SUBS_COUNT; i++)
+        {
+            fscanf(input, "%f %f", &students[n].minorScores[i], &students[n].majorScores[i]);
+            students[n].totalScores[i] = students[n].minorScores[i] + students[n].majorScores[i];
+        }
+
+        n++;
+    }
+
+    // Test print all data
+    for(int i = 0; i < n; i++)
+    {
+        fprintf(output, "ID: %s\n", students[i].id);
+        fprintf(output, "Name: %s\n", students[i].name);
+        for(int j = 0; j < SUBS_COUNT; j++)
+        {
+            fprintf(output, "Subject %d - Minor: %.2f, Major: %.2f, Total: %.2f\n", 
+                    j + 1, 
+                    students[i].minorScores[j], 
+                    students[i].majorScores[j], 
+                    students[i].totalScores[j]);
+        }
+        fprintf(output, "\n");
+    }
+}

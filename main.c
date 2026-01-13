@@ -1,25 +1,24 @@
-#include "student.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "parser.h"
 
 int main(int argc, char *argv[])
 {
 
-    if (argc != 3)
+    if (argc != 4)
     {
-        fprintf(stderr, "Usage: %s <input_file> <output_file>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <count_no_of_students> <input_file> <output_file>\n", argv[0]);
         return 1;
     }
 
-    FILE *input = fopen(argv[1], "r");
+    int studentCount = atoi(argv[1]); // Number of students N
 
+    FILE *input = fopen(argv[2], "r");
     if (input == NULL)
     {
         fprintf(stderr, "Input file error\n");
         return 1;
     }
 
-    FILE *output = fopen(argv[2], "w");
+    FILE *output = fopen(argv[3], "w");
 
     if (output == NULL)
     {
@@ -27,6 +26,11 @@ int main(int argc, char *argv[])
         fclose(input);
         return 1;
     }
+
+    parse_input(studentCount, input, output);
+
+    fclose(input);
+    fclose(output);
 
     return 0;
 }

@@ -1,11 +1,22 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#define SUBS_COUNT 5
+
 typedef struct
 {
     char id[10];
     char name[50];
-    float scores[5];
+    float minorScores[SUBS_COUNT];
+    float majorScores[SUBS_COUNT];
+    float totalScores[SUBS_COUNT];
 } Student;
+
+
 
 #endif
