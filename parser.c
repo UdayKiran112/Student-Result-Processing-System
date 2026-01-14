@@ -23,6 +23,7 @@ void parse_input(int count, FILE *input, FILE *output)
         if (idCheck == -1)
         {
             // Prompt user for correct ID
+            fprintf(stderr, "Invalid ID: %s\n", line);
             fprintf(stderr, "Please enter a valid alphanumeric ID: ");
             fgets(line, sizeof(line), stdin);
             line[strcspn(line, "\n")] = 0; // Remove newline character
@@ -31,6 +32,7 @@ void parse_input(int count, FILE *input, FILE *output)
         else if (idCheck == 1)
         {
             // Prompt user for unique ID
+            fprintf(stderr, "Duplicate ID found: %s\n", line);
             fprintf(stderr, "Please enter a unique ID: ");
             fgets(line, sizeof(line), stdin);
             line[strcspn(line, "\n")] = 0; // Remove newline character
@@ -47,6 +49,7 @@ void parse_input(int count, FILE *input, FILE *output)
         if (nameCheck == 1)
         {
             // Prompt user for correct Name
+            fprintf(stderr, "Invalid Name: %s\n", line);
             fprintf(stderr, "Please enter a valid Name (alphabets and spaces only): ");
             fgets(line, sizeof(line), stdin);
             line[strcspn(line, "\n")] = 0; // Remove newline character
@@ -64,6 +67,7 @@ void parse_input(int count, FILE *input, FILE *output)
             if (marksCheck == 1)
             {
                 // Prompt user for correct Minor Marks
+                fprintf(stderr, "Student ID: %s, Name: %s\n", students[n].id, students[n].name);
                 fprintf(stderr, "Please enter a valid Minor Marks for Subject %d: ", i + 1);
                 scanf("%f", &students[n].minorScores[i]);
                 checkMarks(students[n].minorScores[i], students[n].majorScores[i]);
