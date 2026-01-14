@@ -180,3 +180,40 @@ float findMinPercentage(Student students[], int count)
     }
     return minPercentage;
 }
+
+// Function to get grade point from Grade enum
+int getGradePoint(Grade grade)
+{
+    switch (grade)
+    {
+    case O:
+        return 10;
+    case A_PLUS:
+        return 9;
+    case A:
+        return 8;
+    case B_PLUS:
+        return 7;
+    case B:
+        return 6;
+    case C:
+        return 5;
+    case D:
+        return 4;
+    case F:
+        return 0;
+    default:
+        return -1;
+    }
+}
+
+float calculateCGPA(Student student)
+{
+    float cgpa = 0.0;
+    for (int i = 0; i < SUBS_COUNT; i++)
+    {
+        Grade gr = calculateGrade(student.minorScores[i] + student.majorScores[i]);
+        cgpa += getGradePoint(gr);
+    }
+    return cgpa / SUBS_COUNT;
+}

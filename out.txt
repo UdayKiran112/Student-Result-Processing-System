@@ -8,6 +8,7 @@ Subject 5: Minor Marks: 36.00, Major Marks: 52.00, Total Marks: 88.00
 Total Marks: 411.00
 Percentage: 82.20
 Grade: A
+CGPA: 8.60
 
 ID: 25MCMT12
 Name: Ram Krishna
@@ -19,6 +20,7 @@ Subject 5: Minor Marks: 27.00, Major Marks: 47.00, Total Marks: 74.00
 Total Marks: 262.00
 Percentage: 52.40
 Grade: D
+CGPA: 3.20
 
 ID: 25MCMT37
 Name: Anand Kumar
@@ -30,6 +32,7 @@ Subject 5: Minor Marks: 19.00, Major Marks: 26.00, Total Marks: 45.00
 Total Marks: 293.00
 Percentage: 58.60
 Grade: C
+CGPA: 4.60
 
 ID: 25MCMI24
 Name: Ravi Kiran
@@ -37,11 +40,12 @@ Subject 1: Minor Marks: 23.00, Major Marks: 30.00, Total Marks: 53.00
 Subject 2: Minor Marks: 20.00, Major Marks: 27.00, Total Marks: 47.00
 Subject 3: Minor Marks: 17.00, Major Marks: 24.00, Total Marks: 41.00
 Subject 4: Minor Marks: 14.00, Major Marks: 21.00, Total Marks: 35.00
-Subject 5: Minor Marks: 11.00, Major Marks: 18.00, Total Marks: 29.00
-Total Marks: 205.00
-Percentage: 41.00
+Subject 5: Minor Marks: 11.00, Major Marks: 48.00, Total Marks: 59.00
+Total Marks: 235.00
+Percentage: 47.00
 Grade: F
+CGPA: 1.80
 
-Class Average Percentage: 58.55
+Class Average Percentage: 60.05
 Highest Percentage in Class: 82.20
-Lowest Percentage in Class: 41.00
+Lowest Percentage in Class: 47.00

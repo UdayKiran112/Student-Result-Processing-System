@@ -106,6 +106,7 @@ void parse_input(int count, FILE *input, FILE *output)
         fprintf(output, "Total Marks: %.2f\n", students[i].totalMarks);
         fprintf(output, "Percentage: %.2f\n", students[i].totalPercentage);
         fprintf(output, "Grade: %s\n", gradeToString(students[i].grade));
+        fprintf(output, "CGPA: %.2f\n", calculateCGPA(students[i]));
         fprintf(output, "\n");
     }
 
@@ -119,5 +120,6 @@ void parse_input(int count, FILE *input, FILE *output)
     float minPercentage = findMinPercentage(students, n);
     fprintf(output, "Lowest Percentage in Class: %.2f\n", minPercentage);
 
+    
     
 }

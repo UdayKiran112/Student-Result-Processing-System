@@ -42,5 +42,7 @@ char *gradeToString(Grade grade);
 float calculateClassAveragePercentage(Student students[], int count);
 float findMaxPercentage(Student students[], int count);
 float findMinPercentage(Student students[], int count);
+int getGradePoint(Grade grade);
+float calculateCGPA(Student student);
 
 #endif
