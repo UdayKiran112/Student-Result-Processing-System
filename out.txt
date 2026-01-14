@@ -7,7 +7,7 @@ Subject 4 - Minor: 28.00, Major: 48.00, Total: 76.00
 Subject 5 - Minor: 36.00, Major: 52.00, Total: 88.00
 
 ID: 25MCMT12
-Name: Ram
+Name: Ram Krishna
 Subject 1 - Minor: 15.00, Major: 20.00, Total: 35.00
 Subject 2 - Minor: 18.00, Major: 25.00, Total: 43.00
 Subject 3 - Minor: 21.00, Major: 30.00, Total: 51.00
