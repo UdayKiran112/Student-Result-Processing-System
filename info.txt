@@ -12,7 +12,7 @@ Ram Krishna
 18 25
 21 30
 24 35
-27 87
+27 47
 
 25MCMT37
 Anand Kumar

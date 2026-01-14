@@ -27,13 +27,16 @@ typedef struct
     float minorScores[SUBS_COUNT];
     float majorScores[SUBS_COUNT];
     float totalScores[SUBS_COUNT];
-    float percentages[SUBS_COUNT];
-    Grade grades[SUBS_COUNT];
+    float totalMarks;
+    float totalPercentage;
+    Grade grade;
 } Student;
 
 int checkID(char id[], Student students[], int count);
 int checkName(char name[]);
 int checkMarks(float minorMarks, float majorMarks);
+float calculateTotalMarks(float totalScores[]);
+float calculatePercentage(float totalMarks);
 Grade calculateGrade(float percentage);
 char *gradeToString(Grade grade);
 

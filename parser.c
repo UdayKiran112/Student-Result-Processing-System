@@ -77,13 +77,17 @@ void parse_input(int count, FILE *input, FILE *output)
             }
 
             students[n].totalScores[i] = students[n].minorScores[i] + students[n].majorScores[i];
-
-            students[n].percentages[i] = students[n].totalScores[i];
-
-            students[n].grades[i] = calculateGrade(students[n].percentages[i]);
         }
 
         n++;
+    }
+
+    // Calculate total marks, percentage and grade for each student
+    for (int i = 0; i < n; i++)
+    {
+        students[i].totalMarks = calculateTotalMarks(students[i].totalScores);
+        students[i].totalPercentage = calculatePercentage(students[i].totalMarks);
+        students[i].grade = calculateGrade(students[i].totalPercentage);
     }
 
     // Test print all data
@@ -93,14 +97,15 @@ void parse_input(int count, FILE *input, FILE *output)
         fprintf(output, "Name: %s\n", students[i].name);
         for (int j = 0; j < SUBS_COUNT; j++)
         {
-            fprintf(output, "Subject %d - Minor: %.2f, Major: %.2f, Total: %.2f, Percentage: %.2f%%, Grade: %s\n",
+            fprintf(output, "Subject %d: Minor Marks: %.2f, Major Marks: %.2f, Total Marks: %.2f\n",
                     j + 1,
                     students[i].minorScores[j],
                     students[i].majorScores[j],
-                    students[i].totalScores[j],
-                    students[i].percentages[j],
-                    gradeToString(students[i].grades[j]));
+                    students[i].totalScores[j]);
         }
+        fprintf(output, "Total Marks: %.2f\n", students[i].totalMarks);
+        fprintf(output, "Percentage: %.2f\n", students[i].totalPercentage);
+        fprintf(output, "Grade: %s\n", gradeToString(students[i].grade));
         fprintf(output, "\n");
     }
 }

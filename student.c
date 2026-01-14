@@ -61,6 +61,23 @@ int checkMarks(float minorMarks, float majorMarks)
     return 0;
 }
 
+// Function to calculate total marks from total scores
+float calculateTotalMarks(float totalScores[])
+{
+    float sum = 0.0;
+    for (int i = 0; i < SUBS_COUNT; i++)
+    {
+        sum += totalScores[i];
+    }
+    return sum;
+}
+
+// Function to calculate percentage from total marks
+float calculatePercentage(float totalMarks)
+{
+    return (totalMarks / (SUBS_COUNT));
+}
+
 // Function to calculate grade based on percentage
 Grade calculateGrade(float percentage)
 {
