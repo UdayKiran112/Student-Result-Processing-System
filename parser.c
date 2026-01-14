@@ -94,7 +94,7 @@ void parse_input(int count, FILE *input, FILE *output)
         students[i].grade = calculateGrade(students[i].totalPercentage);
     }
 
-    // Test print all data
+    /*// Test print all data
     for (int i = 0; i < n; i++)
     {
         fprintf(output, "ID: %s\n", students[i].id);
@@ -112,21 +112,26 @@ void parse_input(int count, FILE *input, FILE *output)
         fprintf(output, "Grade: %s\n", gradeToString(students[i].grade));
         fprintf(output, "CGPA: %.2f\n", calculateCGPA(students[i]));
         fprintf(output, "\n");
-    }
+    }*/
+
+    // Print student data in tabular form
+    printTabularForm(students, n, stdout);
+    printTabularForm(students, n, output);
 
     // Calculate and print class average percentage
     float classAverage = calculateClassAveragePercentage(students, n);
     fprintf(output, "Class Average Percentage: %.2f\n", classAverage);
+    fprintf(stdout, "Class Average Percentage: %.2f\n", classAverage);
 
     float maxPercentage = findMaxPercentage(students, n);
     fprintf(output, "Highest Percentage in Class: %.2f\n", maxPercentage);
+    fprintf(stdout, "Highest Percentage in Class: %.2f\n", maxPercentage);
 
     float minPercentage = findMinPercentage(students, n);
     fprintf(output, "Lowest Percentage in Class: %.2f\n", minPercentage);
+    fprintf(stdout, "Lowest Percentage in Class: %.2f\n", minPercentage);
 
     // Find grade count and print to output file
     printGradeCount(students, n, output);
-
-    // Print student data in tabular form
-    printTabularForm(students, n, stdout);
+    printGradeCount(students, n, stdout);
 }
