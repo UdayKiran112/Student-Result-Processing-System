@@ -12,7 +12,7 @@ Subject 1 - Minor: 15.00, Major: 20.00, Total: 35.00
 Subject 2 - Minor: 18.00, Major: 25.00, Total: 43.00
 Subject 3 - Minor: 21.00, Major: 30.00, Total: 51.00
 Subject 4 - Minor: 24.00, Major: 35.00, Total: 59.00
-Subject 5 - Minor: 27.00, Major: 40.00, Total: 67.00
+Subject 5 - Minor: 27.00, Major: 37.00, Total: 64.00
 
 ID: 25MCMT37
 Name: Anand Kumar

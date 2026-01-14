@@ -19,6 +19,6 @@ typedef struct
 
 int checkID(char id[], Student students[], int count);
 int checkName(char name[]);
-int checkMarks(float minorMarks[], float majorMarks[]);
+int checkMarks(float minorMarks, float majorMarks);
 
 #endif

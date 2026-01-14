@@ -44,30 +44,17 @@ int checkName(char name[])
 
 // Function to check validity of Marks
 // returns 0 if valid, 1 if minor marks invalid, -1 if major marks invalid, 2 if total marks invalid
-int checkMarks(float minorMarks[], float majorMarks[])
+int checkMarks(float minorMarks, float majorMarks)
 {
-    for (int i = 0; i < SUBS_COUNT; i++)
+    if (minorMarks < 0.0 || minorMarks > 40.0)
     {
-        if (minorMarks[i] < 0.0 || minorMarks[i] > 40.0)
-        {
-            fprintf(stderr, "Invalid Minor Marks: %.2f\n", minorMarks[i]);
-            return 1;
-        }
-
-        if (majorMarks[i] < 0.0 || majorMarks[i] > 60.0)
-        {
-            fprintf(stderr, "Invalid Major Marks: %.2f\n", majorMarks[i]);
-            return -1;
-        }
+        fprintf(stderr, "Invalid Minor Marks: %.2f\n", minorMarks);
+        return 1;
     }
-
-    for (int i = 0; i < SUBS_COUNT; i++)
+    else if (majorMarks < 0.0 || majorMarks > 60.0)
     {
-        if (minorMarks[i] + majorMarks[i] > 100.0)
-        {
-            fprintf(stderr, "Invalid Total Marks: %.2f\n", minorMarks[i] + majorMarks[i]);
-            return 2;
-        }
+        fprintf(stderr, "Invalid Major Marks: %.2f\n", majorMarks);
+        return -1;
     }
 
     return 0;
