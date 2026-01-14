@@ -140,3 +140,43 @@ char *gradeToString(Grade grade)
         return "Unknown";
     }
 }
+
+// Function to calculate class average percentage
+float calculateClassAveragePercentage(Student students[], int count)
+{
+    float avgPercentage = 0.0;
+    for (int i = 0; i < count; i++)
+    {
+        avgPercentage += students[i].totalPercentage;
+    }
+
+    return avgPercentage / count;
+}
+
+// Function to find maximum percentage in the class
+float findMaxPercentage(Student students[], int count)
+{
+    float maxPercentage = students[0].totalPercentage;
+    for (int i = 1; i < count; i++)
+    {
+        if (students[i].totalPercentage > maxPercentage)
+        {
+            maxPercentage = students[i].totalPercentage;
+        }
+    }
+    return maxPercentage;
+}
+
+// Function to find minimum percentage in the class
+float findMinPercentage(Student students[], int count)
+{
+    float minPercentage = students[0].totalPercentage;
+    for (int i = 1; i < count; i++)
+    {
+        if (students[i].totalPercentage < minPercentage)
+        {
+            minPercentage = students[i].totalPercentage;
+        }
+    }
+    return minPercentage;
+}

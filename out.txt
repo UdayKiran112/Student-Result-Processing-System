@@ -42,3 +42,6 @@ Total Marks: 205.00
 Percentage: 41.00
 Grade: F
 
+Class Average Percentage: 58.55
+Highest Percentage in Class: 82.20
+Lowest Percentage in Class: 41.00

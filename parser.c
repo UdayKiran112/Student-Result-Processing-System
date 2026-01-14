@@ -108,4 +108,16 @@ void parse_input(int count, FILE *input, FILE *output)
         fprintf(output, "Grade: %s\n", gradeToString(students[i].grade));
         fprintf(output, "\n");
     }
+
+    // Calculate and print class average percentage
+    float classAverage = calculateClassAveragePercentage(students, n);
+    fprintf(output, "Class Average Percentage: %.2f\n", classAverage);
+
+    float maxPercentage = findMaxPercentage(students, n);
+    fprintf(output, "Highest Percentage in Class: %.2f\n", maxPercentage);
+
+    float minPercentage = findMinPercentage(students, n);
+    fprintf(output, "Lowest Percentage in Class: %.2f\n", minPercentage);
+
+    
 }
