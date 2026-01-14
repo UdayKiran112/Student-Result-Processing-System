@@ -28,6 +28,7 @@ int checkID(char id[], Student students[], int count)
 }
 
 // Function to check validity of student Name
+// returns 0 if valid, 1 if invalid
 int checkName(char name[])
 {
     for (int i = 0; name[i] != '\0'; i++)
@@ -58,4 +59,67 @@ int checkMarks(float minorMarks, float majorMarks)
     }
 
     return 0;
+}
+
+// Function to calculate grade based on percentage
+Grade calculateGrade(float percentage)
+{
+    if (percentage >= 90.0)
+    {
+        return O;
+    }
+    else if (percentage >= 85.0 && percentage < 90.0)
+    {
+        return A_PLUS;
+    }
+    else if (percentage >= 75.0 && percentage < 85.0)
+    {
+        return A;
+    }
+    else if (percentage >= 65.0 && percentage < 75.0)
+    {
+        return B_PLUS;
+    }
+    else if (percentage >= 60.0 && percentage < 65.0)
+    {
+        return B;
+    }
+    else if (percentage >= 55.0 && percentage < 60.0)
+    {
+        return C;
+    }
+    else if (percentage >= 50.0 && percentage < 55.0)
+    {
+        return D;
+    }
+    else
+    {
+        return F;
+    }
+}
+
+// Function to convert Grade enum to string
+char *gradeToString(Grade grade)
+{
+    switch (grade)
+    {
+    case O:
+        return "O";
+    case A_PLUS:
+        return "A+";
+    case A:
+        return "A";
+    case B_PLUS:
+        return "B+";
+    case B:
+        return "B";
+    case C:
+        return "C";
+    case D:
+        return "D";
+    case F:
+        return "F";
+    default:
+        return "Unknown";
+    }
 }

@@ -77,6 +77,10 @@ void parse_input(int count, FILE *input, FILE *output)
             }
 
             students[n].totalScores[i] = students[n].minorScores[i] + students[n].majorScores[i];
+
+            students[n].percentages[i] = students[n].totalScores[i];
+
+            students[n].grades[i] = calculateGrade(students[n].percentages[i]);
         }
 
         n++;
@@ -89,11 +93,13 @@ void parse_input(int count, FILE *input, FILE *output)
         fprintf(output, "Name: %s\n", students[i].name);
         for (int j = 0; j < SUBS_COUNT; j++)
         {
-            fprintf(output, "Subject %d - Minor: %.2f, Major: %.2f, Total: %.2f\n",
+            fprintf(output, "Subject %d - Minor: %.2f, Major: %.2f, Total: %.2f, Percentage: %.2f%%, Grade: %s\n",
                     j + 1,
                     students[i].minorScores[j],
                     students[i].majorScores[j],
-                    students[i].totalScores[j]);
+                    students[i].totalScores[j],
+                    students[i].percentages[j],
+                    gradeToString(students[i].grades[j]));
         }
         fprintf(output, "\n");
     }
