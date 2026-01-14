@@ -5,7 +5,7 @@ Semester: Jan–May 2026<br>
 School of Computer and Information Sciences<br>
 University of Hyderabad<br>
 
-## 📌 Project Description
+## Project Description
 
 This project implements a **Student Result Processing System** in C that:
 
@@ -15,7 +15,7 @@ This project implements a **Student Result Processing System** in C that:
 - Displays results in a structured tabular report
 - Computes class statistics such as average, highest, lowest and grade distribution
 
-## 🧾 Input File Format
+## Input File Format
 
 File name: `info.txt`
 
@@ -51,19 +51,19 @@ Ram Krishna
 - Major range: 0 – 60
 - Total per subject ≤ 100
 
-## 🛠 Compilation
+## Compilation
 
 ```bash
 make
 ```
 
-## ▶ Execution
+## Execution
 
 ```bash
 ./result
 ```
 
-## 📊 Output
+## Output
 
 - Student-wise:
 
@@ -77,7 +77,7 @@ make
   - Lowest Percentage
   - Number of students in each grade category
 
-## 🏷 Grading Scheme
+## Grading Scheme
 
 | Percentage | Grade |
 | ---------- | ----- |
@@ -90,7 +90,7 @@ make
 | 50 – 55    | D     |
 | < 50       | F     |
 
-## 🧠 Validation Rules
+## Validation Rules
 
 | Field       | Validation              |
 | ----------- | ----------------------- |
@@ -102,7 +102,7 @@ make
 
 Invalid records are prompted for correction.
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 Student-Result-Processing-System/
@@ -118,8 +118,8 @@ Student-Result-Processing-System/
 └── README.md
 ```
 
-## 👨‍🎓 Author
+## Author
 
-**Gedela Uday Kiran**
-M.Tech AI
-University of Hyderabad
+**Gedela Uday Kiran**<br>
+M.Tech AI<br>
+University of Hyderabad<br>
