@@ -120,6 +120,9 @@ void parse_input(int count, FILE *input, FILE *output)
     float minPercentage = findMinPercentage(students, n);
     fprintf(output, "Lowest Percentage in Class: %.2f\n", minPercentage);
 
-    
-    
+    // Find grade count and print to output file
+    printGradeCount(students, n, output);
+
+    // Print student data in tabular form
+    printTabularForm(students, n, stdout);
 }

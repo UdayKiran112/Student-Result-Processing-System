@@ -46,6 +46,28 @@ Percentage: 47.00
 Grade: F
 CGPA: 1.80
 
-Class Average Percentage: 60.05
+ID: 25MCMT30
+Name: Ramesh
+Subject 1: Minor Marks: 38.00, Major Marks: 30.00, Total Marks: 68.00
+Subject 2: Minor Marks: 30.00, Major Marks: 40.00, Total Marks: 70.00
+Subject 3: Minor Marks: 35.00, Major Marks: 45.00, Total Marks: 80.00
+Subject 4: Minor Marks: 28.00, Major Marks: 42.00, Total Marks: 70.00
+Subject 5: Minor Marks: 33.00, Major Marks: 50.00, Total Marks: 83.00
+Total Marks: 371.00
+Percentage: 74.20
+Grade: B+
+CGPA: 7.40
+
+Class Average Percentage: 62.88
 Highest Percentage in Class: 82.20
 Lowest Percentage in Class: 47.00
+
+Number of students in each grade:
+O: 0
+A+: 0
+A: 1
+B+: 1
+B: 0
+C: 1
+D: 1
+F: 1
