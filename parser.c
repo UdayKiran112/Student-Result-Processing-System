@@ -58,6 +58,24 @@ void parse_input(int count, FILE *input, FILE *output)
         for (int i = 0; i < SUBS_COUNT; i++)
         {
             fscanf(input, "%f %f", &students[n].minorScores[i], &students[n].majorScores[i]);
+
+            int marksCheck = checkMarks(&students[n].minorScores[i], &students[n].majorScores[i]);
+
+            if (marksCheck == 1)
+            {
+                // Prompt user for correct Minor Marks
+                fprintf(stderr, "Please enter a valid Minor Marks for Subject %d: ", i + 1);
+                scanf("%f", &students[n].minorScores[i]);
+                checkMarks(&students[n].minorScores[i], &students[n].majorScores[i]);
+            }
+            else if (marksCheck == -1)
+            {
+                // Prompt user for correct Major Marks
+                fprintf(stderr, "Please enter a valid Major Marks for Subject %d: ", i + 1);
+                scanf("%f", &students[n].majorScores[i]);
+                checkMarks(&students[n].minorScores[i], &students[n].majorScores[i]);
+            }
+
             students[n].totalScores[i] = students[n].minorScores[i] + students[n].majorScores[i];
         }
 
