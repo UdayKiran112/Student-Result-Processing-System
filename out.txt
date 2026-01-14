@@ -48,17 +48,17 @@ CGPA: 1.80
 
 ID: 25MCMT30
 Name: Ramesh
-Subject 1: Minor Marks: 38.00, Major Marks: 30.00, Total Marks: 68.00
+Subject 1: Minor Marks: 36.00, Major Marks: 30.00, Total Marks: 66.00
 Subject 2: Minor Marks: 30.00, Major Marks: 40.00, Total Marks: 70.00
 Subject 3: Minor Marks: 35.00, Major Marks: 45.00, Total Marks: 80.00
 Subject 4: Minor Marks: 28.00, Major Marks: 42.00, Total Marks: 70.00
 Subject 5: Minor Marks: 33.00, Major Marks: 50.00, Total Marks: 83.00
-Total Marks: 371.00
-Percentage: 74.20
+Total Marks: 369.00
+Percentage: 73.80
 Grade: B+
 CGPA: 7.40
 
-Class Average Percentage: 62.88
+Class Average Percentage: 62.80
 Highest Percentage in Class: 82.20
 Lowest Percentage in Class: 47.00
 

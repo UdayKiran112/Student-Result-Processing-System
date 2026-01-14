@@ -253,9 +253,9 @@ void printTabularForm(Student students[], int count, FILE *output)
     fprintf(output,
             "-----------------------------------------------------------------------------------------------------------------------------------------------------------\n");
     fprintf(output,
-            "| %-8s | %-18s |    S1   |    S2   |    S3   |    S4   |    S5   | Total | %%     | Grade | CGPA |\n");
+            "|    ID    |       Name         |    S1   |    S2   |    S3   |    S4   |    S5   | Total | %%     | Grade | CGPA |\n");
     fprintf(output,
-            "| %-8s | %-18s | Mn | Mj | Mn | Mj | Mn | Mj | Mn | Mj | Mn | Mj |       |       |       |      |\n");
+            "|          |                    | Mn | Mj | Mn | Mj | Mn | Mj | Mn | Mj | Mn | Mj |       |       |       |      |\n");
     fprintf(output,
             "-----------------------------------------------------------------------------------------------------------------------------------------------------------\n");
 
